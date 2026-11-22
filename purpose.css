@@ -70,9 +70,7 @@ h1 {
   color: #543EE0;
 }
 
-/*
-  10. Create a root stacking context
-*/
+/*10. Create a root stacking context*/
 #root, #__next {
   isolation: isolate;
 }
@@ -109,9 +107,6 @@ h1 {
     color: #000;
 }
 }
-
-
-
 
 .welcome{
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/image/welcome_to_chatter.png");
@@ -198,7 +193,6 @@ h1 {
   height: 700px;
   justify-content: space-around;
   
-  
   & img{border-radius: 50%;}
   
 }
@@ -208,16 +202,12 @@ h1 {
   gap: 2rem;
   height: 100%;
 
-  & div img{
-    margin-block: 4em;
-  }
+  & div img{margin-block: 4em;}
 }
 
 .getting_started{
   width: 55%;
-  & button{
-    margin-block: 1.5em;
-  }
+  & button{margin-block: 1.5em;}
 }
 
 footer{
@@ -226,12 +216,7 @@ footer{
   background-color: #FFEDCC80;
   padding-block: 7%;
   
-  & h1{
-    text-align: center;
-  }
+  & h1{text-align: center;}
   
-  & h4{
-    font-size: 2rem;
-  }
+  & h4{font-size: 2rem;}
 }
-
