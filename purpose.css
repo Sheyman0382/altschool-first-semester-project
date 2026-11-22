@@ -107,7 +107,7 @@ h1 {
 }
 
 .welcome{
-  background-image: url("image/welcome_to_chatter.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("image/welcome_to_chatter.png"); 
   background-size: cover;
   background-repeat: no-repeat;
   
