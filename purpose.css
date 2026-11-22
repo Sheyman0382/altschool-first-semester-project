@@ -1,0 +1,237 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+
+
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+  border-radius: 8px;
+  background-color: #543EE0;
+  height: 50px;
+  width: 140px;
+  color: #fff;
+  font-size: 1.4rem;
+  border: 0px;
+  margin-top: 3rem;
+}
+
+/* 8. Avoid text overflows */
+h2, h3 {
+  overflow-wrap: break-word;
+  font-size: 3rem;
+  line-height: 5rem;
+  text-wrap: balance;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  padding-top: 2rem;
+  text-align: left;
+}
+h1 {
+  text-wrap: balance;
+  font-size: 3rem;
+  color: #543EE0;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+.navigation{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #d0d0d0;
+    min-height: 100px;
+    align-items: center;
+    
+
+        .menu{
+        display: flex;
+        gap: 1.5rem;
+        list-style-type: none;
+        & a{
+            text-decoration: none;
+            font-size: 1.4rem;
+            color: #000;
+        }  
+    }
+
+    .membership{
+      display: flex;
+      gap: 2rem;
+    }
+
+    .membership button{margin: 0;}
+
+    .log_in{
+    background-color: white;
+    color: #000;
+}
+}
+
+
+
+
+.welcome{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/image/welcome_to_chatter.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 850px;
+  line-height: 2.5;
+
+  & div{width: 70%;}
+}
+
+.about_section{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  
+
+  & div, img {
+    width: 35%;
+    height: 20%;
+    padding-top: 7rem;
+  }
+}
+
+.why_join_chatter{
+  width: 68%;
+  margin-inline: auto;
+  padding-top: 5em;
+
+  & div{text-align: center;}
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  gap: 3em;
+}
+
+.item{
+  width: 30%;
+  border: 1px solid rgb(228, 220, 220);
+  border-radius: 8px;
+  padding: 1.5em;
+  margin-top: 3rem;
+
+  & h3{
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  
+}
+
+.join_chatter_section{
+  display: flex;
+  padding-block: 2%;
+  gap:3rem;
+  background-color: #FFEDCC80;
+  height: 500px;
+  margin-top: 5%;
+
+  & img{
+    padding: 3rem;
+    border-radius: 50%;
+    margin-left: 3rem;
+    
+  }
+
+  & div{width: 60%; 
+    overflow: auto;
+    min-height: 10%}
+  & div p{margin-block: 2rem}
+}
+.strong{font-size: 1.7rem;}
+
+.fellow_readers{
+  display: flex;
+  align-items: center;
+  height: 700px;
+  justify-content: space-around;
+  
+  
+  & img{border-radius: 50%;}
+  
+}
+.inner_fellow_readers{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+
+  & div img{
+    margin-block: 4em;
+  }
+}
+
+.getting_started{
+  width: 55%;
+  & button{
+    margin-block: 1.5em;
+  }
+}
+
+footer{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  background-color: #FFEDCC80;
+  padding-block: 7%;
+  
+  & h1{
+    text-align: center;
+  }
+  
+  & h4{
+    font-size: 2rem;
+  }
+}
+
