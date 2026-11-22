@@ -15,8 +15,6 @@
   }
 }
 
-
-
 body {
   /* 4. Increase line-height */
   line-height: 1.5;
@@ -109,7 +107,7 @@ h1 {
 }
 
 .welcome{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/image/welcome_to_chatter.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("image/welcome_to_chatter.png");
   background-size: cover;
   background-repeat: no-repeat;
   
