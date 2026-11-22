@@ -79,7 +79,7 @@ h1 {
     display: flex;
     width: 100%;
     justify-content: space-around;
-    background-color: #d0d0d0;
+    background-color: #d0d0d000;
     min-height: 100px;
     align-items: center;
     
