@@ -148,7 +148,6 @@ h1 {
 .container{
   display: flex;
   justify-content: space-between;
-  gap: 3em;
 }
 
 .item{
@@ -161,7 +160,9 @@ h1 {
   & h3{
     font-size: 1.5rem;
     text-align: left;
+    line-height: 2rem;
   }
+  & p {padding-top: 2rem;}
   
 }
 
